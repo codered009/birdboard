@@ -14,6 +14,7 @@ class CreateProjectMembersTable extends Migration
     public function up()
     {
         Schema::create('project_members', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
             $table->increments('id');
             $table->unsignedInteger('project_id');
             $table->unsignedInteger('user_id');
