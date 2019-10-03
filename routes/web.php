@@ -15,6 +15,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/testemail', function () {
+  Mail::send('emails.test', [], function ($message) {
+    $message
+      ->from('periyasamy@royalthrills.com', 'Yogesh Periyasamy')
+      ->to('periyasamy@royalthrills.com', 'Bala Siva')
+      ->subject('Welcome .. From Royalthrills with ❤');
+  });
+});
+
 Route::group(['middleware' => 'auth'], function () {
     Route::resource('projects', 'ProjectsController');
 

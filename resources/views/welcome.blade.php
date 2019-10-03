@@ -79,10 +79,12 @@
                 </div>
             @endif
 
-            <div class="content">
+            <div class="bg-red-500 content">
                 <div class="title">
                     Birdboard
                 </div>
+                 @<?php var_dump(openssl_get_cert_locations()); ?>
+               <!--  <div class="bg-red-500 sm:bg-green-500 md:bg-blue-500 lg:bg-pink-500 xl:bg-teal-500"></div> -->
 
                 <div class="links">
                     <a href="https://laracasts.com/series/build-a-laravel-app-with-tdd">Watch the Laracasts</a>

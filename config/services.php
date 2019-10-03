@@ -14,6 +14,8 @@ return [
     |
     */
 
+    //67f1e645770fceb4e0bf0b730098de5271875a84
+
     'mailgun' => [
         'domain' => env('MAILGUN_DOMAIN'),
         'secret' => env('MAILGUN_SECRET'),
